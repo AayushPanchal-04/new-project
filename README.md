@@ -1,134 +1,122 @@
-# 📚 Smart Study Session Timer (Pomodoro-Lite)
+# 📁 File Management Application
 
-A console-based productivity tool built in **Java** that implements a Pomodoro-style study timer to help users stay focused and productive during study sessions.
+<div align="center">
 
----
+A simple and beginner-friendly **Python Command-Line File Management Application** that allows users to create, view, read, edit, and delete files easily.
+
+Create File • View Files • Read File • Edit File • Delete File
+
+</div>
 
 ## 🎯 Overview
 
-The **Smart Study Session Timer** helps users manage their study time by dividing work into focused study sessions followed by short breaks. This project demonstrates practical Java concepts such as multithreading, scheduling tasks, and console-based user interaction.
+Managing files is a common task in everyday computing. This **File Management Application** is a Python-based command-line program that helps users perform basic file operations directly from the terminal.
 
-It is designed for students and beginners who want to learn Java while building a real-world productivity tool.
+The project is designed to help beginners understand how file handling works in Python using real-world examples and a menu-driven interface.
 
----
+## 🎓 Key Highlights
+
+- Beginner-friendly Python project  
+- Menu-driven command-line interface  
+- Real-time file operations  
+- Uses Python’s built-in `os` module  
+- No external libraries required  
 
 ## ✨ Features
 
-- Configurable study and break durations  
-- Live countdown timer with visual progress indicator  
-- Automatic transition between study and break sessions  
-- Pause and resume functionality  
-- Session tracking and summary statistics  
-- Clean, menu-driven console interface  
+### 📂 File Operations
 
----
+- Create a new file  
+- View all files in the current directory  
+- Read the contents of a file  
+- Edit (append) data to an existing file  
+- Delete a file  
 
-## 🛠️ Technical Concepts Demonstrated
+### 🧠 Application Logic
 
-### Concurrency & Threading
+- Handles file existence checks  
+- Displays user-friendly messages  
+- Prevents errors using exception handling  
+- Simple and easy-to-use interface  
 
-- ScheduledExecutorService for timed tasks  
-- Multiple thread coordination  
-- Thread-safe state handling  
-- Graceful shutdown of executor services  
+## 🎬 Demo
 
-### Design Principles
+### Application Menu
 
-- Single Responsibility Principle  
-- Encapsulation using inner classes  
-- Proper resource and lifecycle management  
+FILE MANAGEMENT APP  
+1. Create file  
+2. View all files  
+3. Delete file  
+4. Read file  
+5. Edit file  
+6. Exit  
 
----
+## 🆕 Create File
 
-## 📋 Requirements
+Allows the user to create a new file by providing a filename.  
+If the file already exists, the application informs the user.
 
-- Java 8 or higher  
-- Any Java IDE (IntelliJ IDEA recommended)  
-- No external libraries required  
+## 👀 View All Files
 
----
+Displays all files present in the current working directory.  
+If no files are found, an appropriate message is shown.
 
-## 🚀 Getting Started
+## 📖 Read File
 
-### Installation
+Reads and displays the content of a specified file.  
+If the file does not exist, the application handles the error gracefully.
 
-- Clone or download the repository  
-- Open the project in a Java IDE  
-- Place `SmartStudyTimer.java` inside the source folder  
+## ✏️ Edit File
 
-### Running the Application
+Allows the user to append new content to an existing file.  
+The added content is saved without deleting previous data.
 
-- Run the `main` method from your IDE  
-- The application starts in the console  
+## ❌ Delete File
 
----
+Deletes a specified file permanently from the directory.  
+If the file does not exist, an error message is displayed.
 
 ## 📖 Usage
 
-When the application starts, a menu is displayed with options to configure sessions, start or pause timers, view summaries, and exit the program.
+Run the application from the terminal and select options from the menu to perform different file operations.  
+The program continues running until the user selects the Exit option.
 
----
+## 📦 Installation
 
-## 🧭 Application Menu
+1. Clone the repository from GitHub  
+2. Navigate to the project folder  
+3. Run the Python file using Python 3  
 
-1. Configure Session  
-2. Start Session  
-3. Pause Session  
-4. Stop Session  
-5. View Session Summary  
-6. Exit  
+## 📁 Project Structure
 
----
+The project consists of:
+- A main Python file containing all file management logic  
+- A README file for documentation  
 
-## 💡 How It Works
+## 🔍 How It Works
 
-- The user configures study and break durations  
-- A scheduled executor manages countdown timing  
-- The program switches automatically between study and break phases  
-- Session data is recorded and displayed in summaries  
-- The application runs until the user exits  
-
----
-
-## 🏗️ Project Structure
-
-SmartStudyTimer.java  
-- main – Application entry point  
-- run – Main application loop  
-- configureSession – Session setup  
-- startSession – Study session logic  
-- startBreak – Break session logic  
-- pauseSession – Pause functionality  
-- stopSession – Stop functionality  
-- displayProgress – Live timer output  
-- displaySummary – Session statistics  
-- shutdown – Resource cleanup  
-- SessionRecord – Inner class for session data  
-
----
-
-## 🎓 Learning Outcomes
-
-This project helps in understanding:
-
-- Java concurrency and scheduling  
-- Thread coordination and synchronization  
-- Timer-based application logic  
-- Console UI design  
-- State management in multi-threaded programs  
-
----
+- Uses Python file handling methods  
+- Uses the `os` module to manage files  
+- User input determines the operation to perform  
+- Exception handling prevents program crashes  
+- Menu repeats until the user exits  
 
 ## 🛠️ Technologies Used
 
-- Java  
-- Console-based User Interface  
-- Java Concurrency Utilities  
+- Python 3  
+- Command Line Interface (CLI)  
 
----
+### Python Concepts Used
+
+- File handling  
+- Exception handling  
+- Loops  
+- Conditional statements  
+- User input handling  
+- OS module  
 
 ## 👤 Author
 
 Aayush Panchal  
 
-If you found this project helpful, consider giving it a ⭐ on GitHub.
+⭐ If you find this project helpful, don’t forget to give it a star on GitHub!
